@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    background-color: #F5F5F5;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+main.timer-container {
+    margin: auto;
+    max-width: 660px;
+    padding: 20px;
+    width: 100%;
+}
+
+.fa-icon {
+    margin-right: 10px;
+}
