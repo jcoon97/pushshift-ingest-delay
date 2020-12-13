@@ -42,7 +42,12 @@ const updateTime = (type: string): void => {
 
     getPushShiftData(type).then((time: DisplayTime) => {
         button.disabled = false;
-        content.innerText = `${ time.hours } hours, ${ time.minutes } minutes ago`;
+
+        if (time.hours <= 0 && time.minutes <= 0) {
+            content.innerText = "Less than 1 minute ago";
+        } else {
+            content.innerText = `${ time.hours } hours, ${ time.minutes } minutes ago`;
+        }
     }).catch(err => {
         button.disabled = false;
         content.innerText = "Failed to retrieve, please try again.";
