@@ -20,3 +20,10 @@ main.timer-container {
 .fa-icon {
     margin-right: 10px;
 }
+
+.fork-me-github {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
